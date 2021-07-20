@@ -30,7 +30,7 @@ spec:
   selector:
     app: zk
 ---
-apiVersion: apps/v1beta1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: zk
@@ -57,7 +57,7 @@ spec:
               topologyKey: "kubernetes.io/hostname"
       containers:
       - name: kubernetes-zookeeper
-        image: zookeeper:0.1
+        image: eubraatmosphere/zookeeper:0.1
         resources:
           requests:
             memory: "1Gi"
