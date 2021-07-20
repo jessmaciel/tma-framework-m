@@ -36,6 +36,9 @@ metadata:
   name: zk
 spec:
   serviceName: zk-hs
+  selector:
+    matchLabels:
+      app: zk
   replicas: 1
   podManagementPolicy: Parallel
   updateStrategy:
