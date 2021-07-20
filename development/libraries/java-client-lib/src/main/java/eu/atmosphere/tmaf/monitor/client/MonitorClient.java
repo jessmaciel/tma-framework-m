@@ -45,8 +45,8 @@ public abstract class MonitorClient {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MonitorClient.class);
 
-    private static final String DEFAULT_ENDPOINT = "http://192.168.122.240:32025/monitor";
-    // private static final String DEFAULT_ENDPOINT = "https://192.168.122.240:32025/monitor";
+     //  private static final String DEFAULT_ENDPOINT = "http://192.168.122.240:32025/monitor";
+    private static final String DEFAULT_ENDPOINT = "https://192.168.122.240:32025/monitor";
 //    private static final String DEFAULT_ENDPOINT = "http://localhost:80/monitor";
     private static final String ENDPOINT_AUTH_PATH = "auth";
     private static final int NONINITIALIZED_PROBEID = -1;
