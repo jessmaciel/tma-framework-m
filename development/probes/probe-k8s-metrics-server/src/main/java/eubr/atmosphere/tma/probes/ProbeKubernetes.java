@@ -76,17 +76,20 @@ public class ProbeKubernetes {
         LOGGER.info("start {}!", start);
 
         // TODO: Remove it! It is just sample data
+         // TODO: Remove it! It is just sample data
+        // this is a map about the 
         resourceKeyMap.put("kafka-0", 8);
-        resourceKeyMap.put("wildfly-0", 9);
-        resourceKeyMap.put("mysql-wsvd-0", 10);
-        resourceKeyMap.put("wildfly-1", 13);
-        resourceKeyMap.put("wildfly-2", 14);
-        resourceKeyMap.put("teastore-webui-0", 15);
-        resourceKeyMap.put("teastore-webui-1", 16);
-        resourceKeyMap.put("teastore-webui-2", 17);
+        // resourceKeyMap.put("wildfly-0", 9);
+        // resourceKeyMap.put("mysql-wsvd-0", 10);
+        // resourceKeyMap.put("wildfly-1", 13);
+        // resourceKeyMap.put("wildfly-2", 14);
+        resourceKeyMap.put("teastore-webui-0", 9);
+        // resourceKeyMap.put("teastore-webui-0", 15);
+        // resourceKeyMap.put("teastore-webui-1", 16);
+        // resourceKeyMap.put("teastore-webui-2", 17);
 
-        resourceKeyMap.put("virtmanagernode-standard-pc-i440fx-piix-1996", 11);
-        resourceKeyMap.put("virtmanagermaster-standard-pc-i440x-piix-1996", 12);
+        // resourceKeyMap.put("virtmanagernode-standard-pc-i440fx-piix-1996", 11);
+        // resourceKeyMap.put("virtmanagermaster-standard-pc-i440x-piix-1996", 12);
 
         String uriPods = metricsEndpoint + "namespaces/" + namespaceName + "/pods/";
         String uriNodes = metricsEndpoint + "nodes/";
