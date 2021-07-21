@@ -243,7 +243,7 @@ public class ProbeKubernetes {
     }
 
     private static boolean isMonitorizedPod(String podName) {
-        return podName.startsWith("wildfly-") || podName.startsWith("mysql-wsvd-") || podName.startsWith("kafka-")|| podName.startsWith("teastore-webui-");
+        return podName.startsWith("mysql-wsvd-") || podName.startsWith("kafka-") || podName.startsWith("teastore-webui-") || podName.startsWith("teastore-persistence-") || podName.startsWith("teastore-image-") || podName.startsWith("teastore-auth-") ;
     }
 
     private static boolean isMonitorizedNode(String nodeName) {
