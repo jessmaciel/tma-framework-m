@@ -75,18 +75,24 @@ public class ProbeKubernetes {
         boolean start = client.start();
         LOGGER.info("start {}!", start);
 
-        // TODO: Remove it! It is just sample data
-         // TODO: Remove it! It is just sample data
-        // this is a map about the 
+        //math between name pod and ID resource
         resourceKeyMap.put("kafka-0", 8);
-        // resourceKeyMap.put("wildfly-0", 9);
-        // resourceKeyMap.put("mysql-wsvd-0", 10);
-        // resourceKeyMap.put("wildfly-1", 13);
-        // resourceKeyMap.put("wildfly-2", 14);
         resourceKeyMap.put("teastore-webui-0", 9);
-        // resourceKeyMap.put("teastore-webui-0", 15);
-        // resourceKeyMap.put("teastore-webui-1", 16);
-        // resourceKeyMap.put("teastore-webui-2", 17);
+        resourceKeyMap.put("teastore-webui-1", 10);
+        resourceKeyMap.put("teastore-webui-2", 11);
+        resourceKeyMap.put("teastore-webui-3", 12);
+        resourceKeyMap.put("teastore-webui-4", 13);
+        resourceKeyMap.put("teastore-webui-5", 14);
+        resourceKeyMap.put("teastore-webui-6", 15);
+        resourceKeyMap.put("teastore-persistence-0", 16);
+        resourceKeyMap.put("teastore-persistence-1", 17);
+        resourceKeyMap.put("teastore-persistence-2", 18);
+        resourceKeyMap.put("teastore-persistence-3", 19);
+        resourceKeyMap.put("teastore-image-0", 20);
+        resourceKeyMap.put("teastore-image-1", 21);
+        resourceKeyMap.put("teastore-auth-0", 22);
+        resourceKeyMap.put("teastore-auth-1", 23);
+
 
         // resourceKeyMap.put("virtmanagernode-standard-pc-i440fx-piix-1996", 11);
         // resourceKeyMap.put("virtmanagermaster-standard-pc-i440x-piix-1996", 12);
