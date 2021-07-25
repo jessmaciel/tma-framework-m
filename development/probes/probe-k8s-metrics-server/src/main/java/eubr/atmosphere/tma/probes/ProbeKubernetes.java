@@ -92,6 +92,9 @@ public class ProbeKubernetes {
         resourceKeyMap.put("teastore-image-1", 21);
         resourceKeyMap.put("teastore-auth-0", 22);
         resourceKeyMap.put("teastore-auth-1", 23);
+        resourceKeyMap.put("master", 24);
+        resourceKeyMap.put("worker", 25);
+
 
 
         // resourceKeyMap.put("virtmanagernode-standard-pc-i440fx-piix-1996", 11);
