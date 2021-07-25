@@ -75,7 +75,7 @@ public class ProbeKubernetes {
         boolean start = client.start();
         LOGGER.info("start {}!", start);
 
-        //math between name pod and ID resource
+        //match between name pod | node and ID resource
         resourceKeyMap.put("kafka-0", 8);
         resourceKeyMap.put("teastore-webui-0", 9);
         resourceKeyMap.put("teastore-webui-1", 10);
@@ -250,6 +250,6 @@ public class ProbeKubernetes {
     }
 
     private static boolean isMonitorizedNode(String nodeName) {
-        return nodeName.startsWith("virtmanagernode-") || nodeName.startsWith("kubernetes-");
+        return nodeName.startsWith("master") || nodeName.startsWith("worker");
     }
 }
