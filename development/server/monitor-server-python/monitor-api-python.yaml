@@ -37,3 +37,5 @@ spec:
         - containerPort: 5000
         - containerPort: 9100
           name: metrics
+      nodeSelector:
+        nodetype: control

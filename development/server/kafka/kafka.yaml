@@ -43,6 +43,8 @@ spec:
       labels:
         app: kafka
     spec:
+      nodeSelector:
+        nodetype: control
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:

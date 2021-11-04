@@ -48,6 +48,8 @@ spec:
       labels:
         app: zk
     spec:
+      nodeSelector:
+        nodetype: control
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
