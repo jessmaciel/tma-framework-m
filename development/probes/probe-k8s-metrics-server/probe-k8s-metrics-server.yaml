@@ -23,4 +23,6 @@ spec:
       - name: probe-k8s-metrics-server
         image: tma-monitor/probe-k8s-metrics-server:0.1
         tty: true
+      nodeSelector:
+        nodetype: control
 
